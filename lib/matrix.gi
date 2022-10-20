@@ -189,6 +189,13 @@ InstallMethod( IsDiagonalMatrix,
 InstallTrueMethod( IsDiagonalMatrix, IsMatrixOrMatrixObj and IsEmptyMatrix );
 
 
+InstallTrueMethod( IsFFEMatrixObj, IsFFECollColl and IsMatrixObj );
+InstallTrueMethod( IsMatrixGroup, IsRingElementCollCollColl and IsGroup );
+InstallTrueMethod( IsFFEMatrixGroup, IsFFECollCollColl and IsMatrixGroup );
+DeclareCategoryCollections("IsMatrixObj" );
+InstallTrueMethod( IsMatrixGroup, IsMatrixObjCollection and IsGroup );
+
+
 #############################################################################
 ##
 ##  Note that an empty list is not a matrix,

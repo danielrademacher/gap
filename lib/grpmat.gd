@@ -14,6 +14,19 @@
 
 #############################################################################
 ##
+#C  TODO
+##
+##  New Categories: TODO
+##
+
+DeclareCategory( "IsFFEMatrixObj", IsMatrixObj );
+DeclareCategory( "IsCyclotomicMatrixObj", IsMatrixObj );
+DeclareCategory( "IsFFEVectorObj", IsVectorObj );
+DeclareCategory( "IsCyclotomicVectorObj", IsVectorObj );
+
+
+#############################################################################
+##
 #C  IsMatrixGroup(<grp>)
 ##
 ##  <#GAPDoc Label="IsMatrixGroup">
@@ -26,7 +39,10 @@
 ##  </ManSection>
 ##  <#/GAPDoc>
 ##
-DeclareSynonym( "IsMatrixGroup", IsRingElementCollCollColl and IsGroup );
+
+#DeclareSynonym( "IsMatrixGroup", IsRingElementCollCollColl and IsGroup );
+DeclareCategory( "IsMatrixGroup", IsGroup );
+
 
 #############################################################################
 ##
