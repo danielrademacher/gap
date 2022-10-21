@@ -233,6 +233,8 @@ InstallTrueMethod( IsMatrixOrMatrixObj, IsMatrix );
 ##  <#/GAPDoc>
 ##
 DeclareCategory( "IsMatrixObj", IsMatrixOrMatrixObj );
+DeclareCategoryCollections("IsMatrixObj" );
+DeclareCategoryCollections("IsMatrixObjCollection" );
 
 
 #############################################################################

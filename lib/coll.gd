@@ -232,7 +232,7 @@ fi;
 BIND_GLOBAL( "CategoryCollections", function ( elms_filter )
     local    pair, super, flags, name, coll_filter, len;
     
-    # check once with read lock -- common case 
+    # check once with read lock -- common case
     atomic readonly CATEGORIES_COLLECTIONS do
     # Check whether the collections category is already defined.
     for pair in CATEGORIES_COLLECTIONS do

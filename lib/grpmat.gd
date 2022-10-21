@@ -42,8 +42,6 @@ DeclareCategory( "IsCyclotomicVectorObj", IsVectorObj );
 
 #DeclareSynonym( "IsMatrixGroup", IsRingElementCollCollColl and IsGroup );
 DeclareCategory( "IsMatrixGroup", IsGroup );
-DeclareCategoryCollections("IsMatrixObj" );
-
 
 #############################################################################
 ##
